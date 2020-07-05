@@ -1,0 +1,583 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #f2f2f2;
+}
+header{
+    background: url("../img/header-bg.png");
+    height: 100vh;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+/* Навигация */
+.header_nav{
+    width: 100%;
+    /* height: 100px; */
+    display: flex;
+    justify-content: space-around;
+    align-items: top;
+}
+.nav_links{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.links{
+    /* margin: 42px; */
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    transition: all .3s ease-in;
+    font-stretch: ultra-expanded;
+}
+.links:hover{
+    color: #e6e6e6a4;
+    transition: all .3s ease-in;
+}
+/* картинка (Штурвал) */
+.header_img{
+    /* height: 150px; */
+    position: relative;
+    top: 25px;
+}
+/* контент хедера */
+.header_content{
+    width: 100%;
+    height: 77%;
+    display: flex;
+}
+/* Левая сторона хедера */
+.header_left_content{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shedule{
+    position: absolute;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    transform: rotate(-90deg);
+}
+/* Середина хедера */
+.header_middle_content{
+    width: 60%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(192, 192, 192, 0.2);
+}
+.restaurant{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 10px;
+    letter-spacing: 8px;
+}
+/* Навание ресторана */
+.restaurant_name{
+    color: white;
+    font-size: 70px;
+    margin-top: 25px;
+    padding: 5px;
+    text-transform: uppercase;
+    font-family: 'Cinzel Decorative', cursive;
+}
+/* линия */
+.line{
+    width: 70%;
+    background: #E8C300;
+    border-radius: 20px;
+    height: 6px;
+    border: none;
+    margin-bottom: 30px;
+}
+/* Кнопки в хедере */
+.header_buttons{
+    margin-top: 20px;
+}
+.header_btn{
+    width: 200px;
+    height: 60px;
+    margin: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    color: white;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition: all .3s ease-in;
+}
+.header_btn:hover{
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+/* Левая кнопка */
+.book_table{
+    background: #E8C300;
+}
+.book_table:hover{
+    background: #f8d40ab9;
+}
+.book_table > a{
+    padding: 20px 55px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+/* Правая кнопка */
+.explore{
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: none;
+}
+.explore:hover{
+    background: #ffffff17;
+}
+/* Правая сторона хедера */
+.header_right_content{
+    width: 20%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Социальные сети */
+.media_container{
+    width: 60px;
+    height: 60px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.media:hover  .media_container{
+    background: #ffffff17;
+}
+.media{
+    color: white;
+    font-size: 20px;
+}
+/* Начинается меин */
+.article_container{
+    padding-left: 60px;
+    padding-right: 60px;
+    height: 100vh;
+}
+/* О нас */
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info_about{
+    width: 45%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 35px;
+}
+.title_article{
+    text-transform: uppercase;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 30px;
+    padding: 10px;
+}
+.line_about{
+    width: 25%;
+    background: #E8C300;
+    border-radius: 20px;
+    height: 6px;
+    border: none;
+    margin-bottom: 20px;
+}
+.subtitle_article{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.description{
+    font-size: 14px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.article_img_about{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 35px;
+}
+.additional{
+    width: 475px;
+    box-shadow: 0px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+.square_about{
+    position: absolute;
+    right: 45px;
+    width: 250px;
+    height: 250px;
+    border: 20px solid #E8C300;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+/* Команда */
+.team-container{
+    background: url(../img/team_bg.png);
+    background-repeat: round;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.our_team{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 8px;
+    margin-bottom: 50px;
+}
+.team{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info_team{
+    width: 45%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35px;
+}
+.article_img_team{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 35px;
+}
+.square_team{
+    position: absolute;
+    left: 45px;
+    width: 250px;
+    height: 250px;
+    border: 20px solid #E8C300;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.line_team{
+    width: 35%;
+    background: #E8C300;
+    border-radius: 20px;
+    height: 6px;
+    border: none;
+    margin-bottom: 20px;
+}
+/* Бронирование */
+.booking-container{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.booking{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info_booking{
+    width: 45%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+.line_booking{
+    width: 40%;
+    background: #E8C300;
+    border-radius: 20px;
+    height: 6px;
+    border: none;
+    margin-bottom: 20px;
+}
+.form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.input{
+    width: 250px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #E5E5E5;
+    padding-left: 20px;
+    margin: 10px;
+}
+.book_now{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    background: #E8C300;
+    font-size: 12px;
+    color: white;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition: all .3s ease-in;
+}
+.article_img_booking{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 35px;
+}
+.square_booking{
+    position: absolute;
+    right: 70px;
+    width: 250px;
+    height: 250px;
+    border: 20px solid #E8C300;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.work_time{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin-top: 30px;
+}
+.work_time > p span{
+    font-weight: bold;
+}
+/* Специальности */
+.specialties{
+    background: url(../img/specialties_bg.png);
+}
+/* Меню ресторана */
+.menu{
+    height: 130vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.info_menu{
+    width: 45%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.line_menu{
+    width: 46%;
+    background: #E8C300;
+    border-radius: 20px;
+    height: 6px;
+    border: none;
+    margin-bottom: 20px;
+}
+.list_menu_container{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.list_types_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 40px;
+}
+.list_types{
+    width: 120px;
+    padding: 20px 15px;
+    border: none;
+    background: none;
+    border-left: 1px solid rgba(51, 51, 51, 0.2);
+    border-right: 1px solid rgba(51, 51, 51, 0.2);
+    transition: all .3s ease-in;
+}
+.list_types:hover{
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+.list_menu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.table{
+    width: 100%;
+    height: 450px;
+    display: none;
+}
+/* Списки меню */
+.soupe_list,
+.pizza_list,
+.pasta_list,
+.desert_list,
+.wine_list,
+.beer_list,
+.drinks_list{
+    display: block;
+    transition: all 2s ease-in;
+}
+
+.active_btn{
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+}
+
+
+
+
+
+.table td{
+    width: 380px;
+    height: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding: 0 20px 0 20px;
+}
+.table td span{
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: justify;
+}
+table td p{
+    color: rgb(168, 168, 168);
+    font-style: italic;
+}
+/* Эвенты */
+.events_container{
+    background: url(../img/events_bg.png);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.private_events{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 8px;
+    margin-bottom: 50px;
+}
+.events{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.weddings{
+    width: 394px;
+    height: 80px;
+    left: 365px;
+    position: absolute;
+    transform: rotate(90deg);
+    background: #000;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.weddings>span{
+    text-transform: uppercase;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 24px;
+    padding-left: 20px;
+}
+.corporate_parties{
+    width: 394px;
+    height: 80px;
+    right: 365px;
+    position: absolute;
+    transform: rotate(-90deg);
+    background: #000;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.corporate_parties>span{
+    text-transform: uppercase;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 24px;
+    padding-left: 20px;
+}
+.article_img_events_left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 35px;
+}
+.square_events_left{
+    position: absolute;
+    left: 85px;
+    width: 250px;
+    height: 250px;
+    border: 20px solid #E8C300;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.article_img_events_right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 35px;
+}
+.square_events_right{
+    position: absolute;
+    right: 85px;
+    width: 250px;
+    height: 250px;
+    border: 20px solid #E8C300;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.events_contacts{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(128, 128, 128);
+    font-size: 12px;
+}
+.events_contacts > span{
+    font-weight: bold;
+}

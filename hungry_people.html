@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/hungry_people.css">
+    <script src="https://kit.fontawesome.com/4677fa91cd.js" crossorigin="anonymous"></script>
+    <script src="script/hungry_people_menu.js"></script>
+</head>
+<body>
+    <header id="home">
+        <nav class="header_nav">
+            <div class="nav_links">
+                <a href="#home" class="links">Home</a>
+                <a href="#about" class="links">About</a>
+                <a href="#team" class="links">Team</a>
+                <a href="#booking" class="links">Booking</a>
+            </div>
+            <img src="img/Vector.png" class="header_img" alt="">
+            <div class="nav_links">
+                <a href="#menu" class="links">Menu</a>
+                <a href="#gallery" class="links">Gallery</a>
+                <a href="#events" class="links">Events</a>
+                <a href="#contacts" class="links">Contacts</a>
+            </div>
+        </nav>
+        <div class="header_content">
+            <div class="header_left_content">
+                <span class="shedule">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</span>
+            </div>
+            <div class="header_middle_content">
+                <span class="restaurant">Restaurant</span>
+                <span class="restaurant_name">Hungry Peole</span>
+                <hr class="line">
+                <div class="header_buttons">
+                    <button class="header_btn book_table"><a href="#booking">Book Table</a></button>
+                    <button class="header_btn explore">Explore</button>
+                </div>
+            </div>
+            <div class="header_right_content">
+                <div class="media_container"><a href="#" class="media"><i class="fab fa-facebook-f"></i></a></div>
+                <div class="media_container"><a href="#" class="media"><i class="fab fa-twitter"></i></a></div>
+                <div class="media_container"><a href="#" class="media"><i class="fab fa-instagram"></i></a></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <article class="article_container about" id="about">
+            <section class="info_about">
+                <span class="title_article">About Us</span>
+                <hr class="line_about">
+                <p class="subtitle_article">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Aliquid, quidem unde. Perspiciatis voluptas assumenda placeat rem minima.
+                </p>
+                <p class="description">
+                    Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. 
+                    Morbi non ultrices ligula. 
+                    Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. 
+                    Mauris tincidunt feugiat diam convallis pharetra. 
+                    Nulla facilisis semper laoreet.
+                </p>
+            </section>
+            <section class="article_img_about">
+                <img src="img/about-img.png" class="additional" alt="">
+                <div class="square_about"></div>
+            </section>
+        </article>
+        <article class="article_container team-container" id="team">
+            <div class="our_team"><span>Our Team</span></div>
+            <div class="team">
+                <section class="article_img_team">
+                    <img src="img/team.png" class="additional" alt="">
+                    <div class="square_team"></div>
+                </section>
+                <section class="info_team">
+                    <span class="title_article">Master Chef</span>
+                    <hr class="line_team">
+                    <p class="subtitle_article">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Aliquid, quidem unde. Perspiciatis voluptas assumenda placeat rem minima.
+                    </p>
+                    <p class="description">
+                        Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. 
+                        Morbi non ultrices ligula. 
+                        Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. 
+                        Mauris tincidunt feugiat diam convallis pharetra. 
+                        Nulla facilisis semper laoreet.
+                    </p>
+                </section>
+            </div>
+        </article>
+        <article class="article_container booking-container" id="booking">
+            <div class="booking">
+                <section class="info_booking">
+                    <span class="title_article">Book a Table</span>
+                    <hr class="line_booking">
+                    <form class="form" action="">
+                        <input class="input" placeholder="Name" type="text">
+                        <input class="input" placeholder="Email" type="email">
+                        <input class="input" placeholder="Phone" type="tel">
+                        <input class="input" placeholder="People" type="number">
+                        <input class="input" placeholder="Date" type="date">
+                        <input class="input" placeholder="Time" type="time">
+                        <input type="submit" class="book_now" value="Book Now">
+                    </form>
+                </section>
+                <section class="article_img_booking">
+                    <img src="img/booking.png" class="additional" alt="">
+                    <div class="square_booking"></div>
+                </section>
+            </div>
+            <div class="work_time"><p>Mon - Fri: <span>8PM</span> - <span>10PM</span>, Sat - Sun: <span>8PM</span> - <span>3AM</span>, <span>Phone: +40 729 131 637/+40 726 458 782</span></p></div>
+        </article>
+        <article class="article_container specialties" id="specialties"></article>
+        <article class="article_container menu" id="menu">
+            <section class="info_menu">
+                <span class="title_article">Delicious Menu</span>
+                <hr class="line_menu">
+                <p class="subtitle_article">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Aliquid, quidem unde. Perspiciatis voluptas assumenda placeat rem minima.
+                </p>
+            </section>
+            <section class="list_menu_container">
+                <div class="list_types_btn">
+                    <button class="list_types" id="soupe">Soupe</button>
+                    <button class="list_types active_btn" id="pizza">Pizza</button>
+                    <button class="list_types" id="pasta">Pasta</button>
+                    <button class="list_types" id="desert">Desert</button>
+                    <button class="list_types" id="wine">Wine</button>
+                    <button class="list_types" id="beer">Beer</button>
+                    <button class="list_types" id="drinks">Drinks</button>
+                </div>
+                <div class="list_menu">
+                    <table class="table" id="soupe_list">
+                        <tr>
+                            <td><span>Cream of Mushroom Soup . . . . 29,12 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Cream of Mushroom Soup . . . . 29,12 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Cream of Mushroom Soup . . . . 29,12 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                        </tr>
+                        <tr>
+                            <td><span>Cream of Mushroom Soup . . . . 29,12 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Cream of Mushroom Soup . . . . 29,12 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Cream of Mushroom Soup . . . . 29,12 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                        </tr>
+                        <tr>
+                            <td><span>Cream of Mushroom Soup . . . . 29,12 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Cream of Mushroom Soup . . . . 29,12 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Cream of Mushroom Soup . . . . 29,12 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                        </tr>
+                        <tr>
+                            <td><span>Cream of Mushroom Soup . . . . 29,12 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Cream of Mushroom Soup . . . . 29,12 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Cream of Mushroom Soup . . . . 29,12 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                        </tr>
+                        <tr>
+                            <td><span>Cream of Mushroom Soup . . . . 29,12 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Cream of Mushroom Soup . . . . 29,12 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Cream of Mushroom Soup . . . . 29,12 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                        </tr>
+                        <tr>
+                            <td><span>Cream of Mushroom Soup . . . . 29,12 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Cream of Mushroom Soup . . . . 29,12 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Cream of Mushroom Soup . . . . 29,12 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                        </tr>
+                        <tr>
+                            <td><span>Cream of Mushroom Soup . . . . 29,12 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Cream of Mushroom Soup . . . . 29,12 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Cream of Mushroom Soup . . . . 29,12 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                        </tr>
+                    </table>
+                    <table class="table pizza_list" id="pizza_list">
+                        <tr>
+                            <td><span>Pizza Quatro Stragioni . . . . 55,68 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Pizza Quatro Stragioni . . . . 55,68 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Pizza Quatro Stragioni . . . . 55,68 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                        </tr>
+                        <tr>
+                            <td><span>Pizza Quatro Stragioni . . . . 55,68 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Pizza Quatro Stragioni . . . . 55,68 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Pizza Quatro Stragioni . . . . 55,68 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                        </tr>
+                        <tr>
+                            <td><span>Pizza Quatro Stragioni . . . . 55,68 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Pizza Quatro Stragioni . . . . 55,68 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Pizza Quatro Stragioni . . . . 55,68 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                        </tr>
+                        <tr>
+                            <td><span>Pizza Quatro Stragioni . . . . 55,68 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Pizza Quatro Stragioni . . . . 55,68 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Pizza Quatro Stragioni . . . . 55,68 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                        </tr>
+                        <tr>
+                            <td><span>Pizza Quatro Stragioni . . . . 55,68 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Pizza Quatro Stragioni . . . . 55,68 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Pizza Quatro Stragioni . . . . 55,68 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                        </tr>
+                        <tr>
+                            <td><span>Pizza Quatro Stragioni . . . . 55,68 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Pizza Quatro Stragioni . . . . 55,68 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Pizza Quatro Stragioni . . . . 55,68 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                        </tr>
+                        <tr>
+                            <td><span>Pizza Quatro Stragioni . . . . 55,68 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Pizza Quatro Stragioni . . . . 55,68 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Pizza Quatro Stragioni . . . . 55,68 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                        </tr>
+                    </table>
+                    <table class="table" id="pasta_list">
+                        <tr>
+                            <td><span>Pasta Bolognese . . . . 20,98 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Pasta Bolognese . . . . 20,98 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Pasta Bolognese . . . . 20,98 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                        </tr>
+                        <tr>
+                            <td><span>Pasta Bolognese . . . . 20,98 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Pasta Bolognese . . . . 20,98 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Pasta Bolognese . . . . 20,98 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                        </tr>
+                        <tr>
+                            <td><span>Pasta Bolognese . . . . 20,98 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Pasta Bolognese . . . . 20,98 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Pasta Bolognese . . . . 20,98 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                        </tr>
+                        <tr>
+                            <td><span>Pasta Bolognese . . . . 20,98 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Pasta Bolognese . . . . 20,98 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Pasta Bolognese . . . . 20,98 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                        </tr>
+                        <tr>
+                            <td><span>Pasta Bolognese . . . . 20,98 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Pasta Bolognese . . . . 20,98 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Pasta Bolognese . . . . 20,98 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                        </tr>
+                        <tr>
+                            <td><span>Pasta Bolognese . . . . 20,98 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Pasta Bolognese . . . . 20,98 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Pasta Bolognese . . . . 20,98 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                        </tr>
+                        <tr>
+                            <td><span>Pasta Bolognese . . . . 20,98 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Pasta Bolognese . . . . 20,98 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Pasta Bolognese . . . . 20,98 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                        </tr>
+                    </table>
+                    <table class="table" id="desert_list">
+                        <tr>
+                            <td><span>Chokolate Pancakes . . . . 19,28 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Chokolate Pancakes . . . . 19,28 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Chokolate Pancakes . . . . 19,28 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                        </tr>
+                        <tr>
+                            <td><span>Chokolate Pancakes . . . . 19,28 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Chokolate Pancakes . . . . 19,28 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Chokolate Pancakes . . . . 19,28 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                        </tr>
+                        <tr>
+                            <td><span>Chokolate Pancakes . . . . 19,28 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Chokolate Pancakes . . . . 19,28 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Chokolate Pancakes . . . . 19,28 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                        </tr>
+                        <tr>
+                            <td><span>Chokolate Pancakes . . . . 19,28 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Chokolate Pancakes . . . . 19,28 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Chokolate Pancakes . . . . 19,28 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                        </tr>
+                        <tr>
+                            <td><span>Chokolate Pancakes . . . . 19,28 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Chokolate Pancakes . . . . 19,28 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Chokolate Pancakes . . . . 19,28 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                        </tr>
+                        <tr>
+                            <td><span>Chokolate Pancakes . . . . 19,28 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Chokolate Pancakes . . . . 19,28 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Chokolate Pancakes . . . . 19,28 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                        </tr>
+                        <tr>
+                            <td><span>Chokolate Pancakes . . . . 19,28 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Chokolate Pancakes . . . . 19,28 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Chokolate Pancakes . . . . 19,28 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                        </tr>
+                    </table>
+                    <table class="table" id="wine_list">
+                        <tr>
+                            <td><span>Sauvignon Blanc . . . . 74,56 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Sauvignon Blanc . . . . 74,56 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Sauvignon Blanc . . . . 74,56 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                        </tr>
+                        <tr>
+                            <td><span>Sauvignon Blanc . . . . 74,56 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Sauvignon Blanc . . . . 74,56 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Sauvignon Blanc . . . . 74,56 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                        </tr>
+                        <tr>
+                            <td><span>Sauvignon Blanc . . . . 74,56 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Sauvignon Blanc . . . . 74,56 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Sauvignon Blanc . . . . 74,56 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                        </tr>
+                        <tr>
+                            <td><span>Sauvignon Blanc . . . . 74,56 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Sauvignon Blanc . . . . 74,56 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Sauvignon Blanc . . . . 74,56 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                        </tr>
+                        <tr>
+                            <td><span>Sauvignon Blanc . . . . 74,56 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Sauvignon Blanc . . . . 74,56 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Sauvignon Blanc . . . . 74,56 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                        </tr>
+                        <tr>
+                            <td><span>Sauvignon Blanc . . . . 74,56 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Sauvignon Blanc . . . . 74,56 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Sauvignon Blanc . . . . 74,56 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                        </tr>
+                        <tr>
+                            <td><span>Sauvignon Blanc . . . . 74,56 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Sauvignon Blanc . . . . 74,56 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Sauvignon Blanc . . . . 74,56 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                        </tr>
+                    </table>
+                    <table class="table" id="beer_list">
+                        <tr>
+                            <td><span>Great Lakes Brewery . . . . 10,69 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Great Lakes Brewery . . . . 10,69 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Great Lakes Brewery . . . . 10,69 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                        </tr>
+                        <tr>
+                            <td><span>Great Lakes Brewery . . . . 10,69 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Great Lakes Brewery . . . . 10,69 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Great Lakes Brewery . . . . 10,69 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                        </tr>
+                        <tr>
+                            <td><span>Great Lakes Brewery . . . . 10,69 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Great Lakes Brewery . . . . 10,69 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Great Lakes Brewery . . . . 10,69 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                        </tr>
+                        <tr>
+                            <td><span>Great Lakes Brewery . . . . 10,69 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Great Lakes Brewery . . . . 10,69 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Great Lakes Brewery . . . . 10,69 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                        </tr>
+                        <tr>
+                            <td><span>Great Lakes Brewery . . . . 10,69 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Great Lakes Brewery . . . . 10,69 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Great Lakes Brewery . . . . 10,69 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                        </tr>
+                        <tr>
+                            <td><span>Great Lakes Brewery . . . . 10,69 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Great Lakes Brewery . . . . 10,69 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Great Lakes Brewery . . . . 10,69 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                        </tr>
+                        <tr>
+                            <td><span>Great Lakes Brewery . . . . 10,69 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Great Lakes Brewery . . . . 10,69 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Great Lakes Brewery . . . . 10,69 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                        </tr>
+                    </table>
+                    <table class="table" id="drinks_list">
+                        <tr>
+                            <td><span>Classic mojito . . . . 9,89 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Classic mojito . . . . 9,89 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Classic mojito . . . . 9,89 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                        </tr>
+                        <tr>
+                            <td><span>Classic mojito . . . . 9,89 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Classic mojito . . . . 9,89 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Classic mojito . . . . 9,89 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                        </tr>
+                        <tr>
+                            <td><span>Classic mojito . . . . 9,89 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Classic mojito . . . . 9,89 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Classic mojito . . . . 9,89 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                        </tr>
+                        <tr>
+                            <td><span>Classic mojito . . . . 9,89 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Classic mojito . . . . 9,89 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Classic mojito . . . . 9,89 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                        </tr>
+                        <tr>
+                            <td><span>Classic mojito . . . . 9,89 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Classic mojito . . . . 9,89 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Classic mojito . . . . 9,89 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                        </tr>
+                        <tr>
+                            <td><span>Classic mojito . . . . 9,89 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Classic mojito . . . . 9,89 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Classic mojito . . . . 9,89 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                        </tr>
+                        <tr>
+                            <td><span>Classic mojito . . . . 9,89 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Classic mojito . . . . 9,89 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                            <td><span>Classic mojito . . . . 9,89 USD</span><p>Integer ullamcorper neque eu purus euismod</p></td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+        </article>
+        <article class="article_container events_container" id="events">
+            <div class="private_events">Private Events</div>
+            <div class="events">
+                <section class="article_img_events_left">
+                    <div class="weddings"><span>Weddings</span></div>
+                    <img src="img/events_left.png" class="additional" alt="">
+                    <div class="square_events_left"></div>
+                </section>
+                <section class="article_img_events_right">
+                    <div class="corporate_parties"><span>Corporate Parties</span></div>
+                    <img src="img/events_right.png" class="additional" alt="">
+                    <div class="square_events_right"></div>
+                </section>
+            </div>
+            <div class="events_contacts">For private events please call: <span>+40 729 131 637/+40 726 458 782</span> or use the contact form.</div>
+        </article>
+        <article class="gallery" id="gallery"></article>
+        <article class="article_container contacts" id="contacts"></article>
+        <article class="map" id="map"></article>
+    </main>
+    <footer></footer>
+</body>
+</html>
