@@ -10,6 +10,7 @@ body{
 }
 header{
     background: url("../img/header-bg.png");
+    background-repeat: round;
     height: 100vh;
     padding-left: 60px;
     padding-right: 60px;
@@ -147,12 +148,20 @@ header{
     font-weight: bold;
 }
 /* Правая кнопка */
-.explore{
+.specialties_btn{
     border: 1px solid rgba(255, 255, 255, 0.5);
     background: none;
 }
-.explore:hover{
+.specialties_btn:hover{
     background: #ffffff17;
+}
+.specialties_btn > a{
+    padding: 20px 55px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 /* Правая сторона хедера */
 .header_right_content{
@@ -178,8 +187,14 @@ header{
     background: #ffffff17;
 }
 .media{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
     font-size: 20px;
+    text-decoration: none;
 }
 /* Начинается меин */
 .article_container{
@@ -382,8 +397,106 @@ header{
     font-weight: bold;
 }
 /* Специальности */
-.specialties{
+.specialties-container{
     background: url(../img/specialties_bg.png);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.specialties{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 8px;
+    margin-bottom: 50px;
+    color: white;
+}
+.specialties_dishes{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dishes{
+    display: none;
+}
+.pancakes,
+.bolognese,
+.crem_soupe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.article_img_specialties{
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.square_specialties{
+    position: absolute;
+    left: 80px;
+    width: 250px;
+    height: 250px;
+    border: 20px solid #E8C300;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.info_specialties{
+    width: 40%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35px;
+}
+.title_article{
+    text-transform: uppercase;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 28px;
+    padding: 10px;
+}
+.line_bolognese{
+    width: 55%;
+    background: #E8C300;
+    border-radius: 20px;
+    height: 6px;
+    border: none;
+    margin-bottom: 20px;
+}
+.line_pancakes{
+    width: 68%;
+    background: #E8C300;
+    border-radius: 20px;
+    height: 6px;
+    border: none;
+    margin-bottom: 20px;
+}
+.line_crem_soupe{
+    width: 88%;
+    background: #E8C300;
+    border-radius: 20px;
+    height: 6px;
+    border: none;
+    margin-bottom: 20px;
+}
+.specialties_slider_btn{
+    width: 12px;
+    height: 12px;
+    margin: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    border: none;
+    transition: all .2s ease;
+}
+.specialties_slider_btn:hover{
+    cursor: pointer;
+    transition: all .2s ease;
+}
+.active_btn_dishes{
+    background: #fff;
 }
 /* Меню ресторана */
 .menu{
@@ -579,5 +692,117 @@ table td p{
     font-size: 12px;
 }
 .events_contacts > span{
+    font-weight: bold;
+}
+/* Галерея */
+.gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img_gallery{
+    width: 25%;
+}
+/* Контакты */
+.contacts-container{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.contacts{
+    width: 40%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.line_contacts{
+    width: 25%;
+    background: #E8C300;
+    border-radius: 20px;
+    height: 6px;
+    border: none;
+    margin-bottom: 20px;
+}
+.form_contacts{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+    grid-template-areas: 
+    "a a b b c c"
+    "d d d d d d"
+    "e e e f f f";
+}
+.input_contacts{
+    height: 60px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #E5E5E5;
+    padding-left: 20px;
+}
+.name_input_contacts{
+    grid-area: a;
+}
+.email_input_contacts{
+    grid-area: b;
+}
+.phone_input_contacts{
+    grid-area: c;
+}
+.message{
+    grid-area: d;
+    height: 120px;
+}
+.icons_contacts_container{
+    grid-area: e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons_contacts_text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(168, 168, 168);
+    font-size: 12px;
+    margin-right: 15px;
+}
+.icons_contacts{
+    font-size: 18px;
+    color: #E8C300;
+    margin-right: 7px;
+}
+.send_message{
+    grid-area: f;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    background: #E8C300;
+    font-size: 12px;
+    color: white;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition: all .3s ease-in;
+}
+/* Карта */
+.map{
+    width: 100%;
+}
+/* Футер */
+footer{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.9);
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+footer > p span{
     font-weight: bold;
 }
