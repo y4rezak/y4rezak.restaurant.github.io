@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&family=Permanent+Marker&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/hungry_people.css">
     <script src="https://kit.fontawesome.com/4677fa91cd.js" crossorigin="anonymous"></script>
+    <script src="script/slider.js"></script>
     <script src="script/hungry_people_menu.js"></script>
 </head>
 <body>
@@ -36,13 +37,13 @@
                 <hr class="line">
                 <div class="header_buttons">
                     <button class="header_btn book_table"><a href="#booking">Book Table</a></button>
-                    <button class="header_btn explore">Explore</button>
+                    <button class="header_btn specialties_btn"><a href="#specialties">Specialties</a></button>
                 </div>
             </div>
             <div class="header_right_content">
-                <div class="media_container"><a href="#" class="media"><i class="fab fa-facebook-f"></i></a></div>
-                <div class="media_container"><a href="#" class="media"><i class="fab fa-twitter"></i></a></div>
-                <div class="media_container"><a href="#" class="media"><i class="fab fa-instagram"></i></a></div>
+                <div class="media_container"><a target="_blank" href="https://www.facebook.com/" class="media"><i class="fab fa-facebook-f"></i></a></div>
+                <div class="media_container"><a target="_blank" href="https://twitter.com" class="media"><i class="fab fa-twitter"></i></a></div>
+                <div class="media_container"><a target="_blank" href="https://www.instagram.com/" class="media"><i class="fab fa-instagram"></i></a></div>
             </div>
         </div>
     </header>
@@ -112,7 +113,77 @@
             </div>
             <div class="work_time"><p>Mon - Fri: <span>8PM</span> - <span>10PM</span>, Sat - Sun: <span>8PM</span> - <span>3AM</span>, <span>Phone: +40 729 131 637/+40 726 458 782</span></p></div>
         </article>
-        <article class="article_container specialties" id="specialties"></article>
+        <article class="article_container specialties-container" id="specialties">
+            <div class="specialties"><span>Specialties</span></div>
+            <div class="specialties_dishes">
+                <div class="dishes" id="bolognese">
+                    <section class="article_img_specialties">
+                        <img src="img/bolognese.png" class="additional" alt="">
+                        <div class="square_specialties"></div>
+                    </section>
+                    <section class="info_specialties">
+                        <span class="title_article">Pasta Bolognese</span>
+                        <hr class="line_bolognese">
+                        <p class="subtitle_article">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                            Aliquid, quidem unde. Perspiciatis voluptas assumenda placeat rem minima.
+                        </p>
+                        <p class="description">
+                            Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. 
+                            Morbi non ultrices ligula. 
+                            Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. 
+                            Mauris tincidunt feugiat diam convallis pharetra. 
+                            Nulla facilisis semper laoreet.
+                        </p>
+                    </section>
+                </div>
+                <div class="dishes pancakes" id="pancakes">
+                    <section class="article_img_specialties">
+                        <img src="img/pancakes.png" class="additional" alt="">
+                        <div class="square_specialties"></div>
+                    </section>
+                    <section class="info_specialties">
+                        <span class="title_article">Chokolate Pancakes</span>
+                        <hr class="line_pancakes">
+                        <p class="subtitle_article">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                            Aliquid, quidem unde. Perspiciatis voluptas assumenda placeat rem minima.
+                        </p>
+                        <p class="description">
+                            Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. 
+                            Morbi non ultrices ligula. 
+                            Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. 
+                            Mauris tincidunt feugiat diam convallis pharetra. 
+                            Nulla facilisis semper laoreet.
+                        </p>
+                    </section>
+                </div>
+                <div class="dishes" id="crem_soupe">
+                    <section class="article_img_specialties">
+                        <img src="img/crem_soupe.png" class="additional" alt="">
+                        <div class="square_specialties"></div>
+                    </section>
+                    <section class="info_specialties">
+                        <span class="title_article">Cream of Mushroom Soup</span>
+                        <hr class="line_crem_soupe">
+                        <p class="subtitle_article">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                            Aliquid, quidem unde. Perspiciatis voluptas assumenda placeat rem minima.
+                        </p>
+                        <p class="description">
+                            Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. 
+                            Morbi non ultrices ligula. 
+                            Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. 
+                            Mauris tincidunt feugiat diam convallis pharetra. 
+                            Nulla facilisis semper laoreet.
+                        </p>
+                    </section>
+                </div>
+                
+            </div>
+            <div>
+                <button class="specialties_slider_btn" id="bolognese_btn"></button>
+                <button class="specialties_slider_btn active_btn_dishes" id="pancakes_btn"></button>
+                <button class="specialties_slider_btn" id="crem_soupe_btn"></button>
+            </div>
+        </article>
         <article class="article_container menu" id="menu">
             <section class="info_menu">
                 <span class="title_article">Delicious Menu</span>
@@ -410,10 +481,41 @@
             </div>
             <div class="events_contacts">For private events please call: <span>+40 729 131 637/+40 726 458 782</span> or use the contact form.</div>
         </article>
-        <article class="gallery" id="gallery"></article>
-        <article class="article_container contacts" id="contacts"></article>
-        <article class="map" id="map"></article>
+        <article class="gallery" id="gallery">
+            <img class="img_gallery" src="img/gallery1.png" alt="">
+            <img class="img_gallery" src="img/gallery2.png" alt="">
+            <img class="img_gallery" src="img/gallery3.png" alt="">
+            <img class="img_gallery" src="img/gallery4.png" alt="">
+        </article>
+        <article class="article_container contacts-container" id="contacts">
+            <section class="contacts">
+                <span class="title_article">Contact</span>
+                <hr class="line_contacts">
+                <p class="subtitle_article">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Aliquid, quidem unde. Perspiciatis voluptas assumenda placeat rem minima.
+                </p>
+            </section>
+            <section>
+                <form class="form_contacts" action="">
+                    <input class="input_contacts name_input_contacts" placeholder="Name" type="text">
+                    <input class="input_contacts email_input_contacts" placeholder="Email" type="email">
+                    <input class="input_contacts phone_input_contacts" placeholder="Phone" type="tel">
+                    <input class="input_contacts message" type="text" name="message" id="message" placeholder="Message">
+                    <div class="icons_contacts_container">
+                        <span class="icons_contacts_text"><i class="icons_contacts fas fa-map-marker-alt"></i> 5th London Boulevard, U.K.</span>
+                        <span class="icons_contacts_text"><i class="icons_contacts fas fa-phone"></i>+40 729 131 637/+40 726 458 782</span>
+                        <span class="icons_contacts_text"><i class="icons_contacts fas fa-envelope"></i>office@mindblister.com</span>
+                    </div>
+                    <input type="submit" class="send_message" value="Send Message">
+                </form>
+            </section>
+        </article>
+        <article class="map" id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2370.4709569259517!2d-1.4777530846062872!3d53.54935986718705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48797ba762923a4d%3A0x28f7bf7ed7186597!2sFor%20Hungry%20People!5e0!3m2!1sru!2sde!4v1594334248905!5m2!1sru!2sde" width="1345" height="475" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </article>
     </main>
-    <footer></footer>
+    <footer>
+        <p>© Copyright <span>Mindblister</span> 2020</p>
+    </footer>
 </body>
 </html>
